@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: darkgrey;
+    margin: 0;
+    min-height: 199vh;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: green;
+    order: 0;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.intro {
+    width: 60%;
+    order: 1;
+    background-color: aqua;
+}
+
+.experience {
+    width: 60%;
+    align-self: right;
+    order: 2;
+    background-color: bisque;
+}
+
+
+.projects {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+    justify-content: space-evenly;
+}
+
+.project {
+    margin: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+
+    .project,
+    .skill {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .intro,
+    .experience {
+        width: 80%
+    }
+}
+
+.skills {
+    width: 90%;
+    order: 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.skills img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+    margin: 0px;
+}
+
+.skill h5 {
+    margin: 0;
+}
+
+.skill {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin: 10px;
+    gap: 10px;
+    width: auto;
+}
+
+.icons {
+    display: flex;
+    gap: 5px;
+}
